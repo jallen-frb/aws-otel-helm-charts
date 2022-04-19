@@ -240,14 +240,7 @@ adotCollector:
       requests:
         cpu: "200m"
         memory: "200Mi"
-    tolerations:
-      - key: "node-role.kubernetes.io/master"
-        operator: "Exists"
-        effect: "NoSchedule"
-      - operator: "Exists"
-        effect: "NoExecute"
-      - operator: "Exists"
-        effect: "NoSchedule"
+    tolerations: []
     volumes:
       - configMap:
           name: "adot-conf"
